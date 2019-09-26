@@ -2,7 +2,7 @@ package codechef;
 
 import java.util.Scanner;
 public class ATM {
-    public static void main(String[] args) throws java.lang.Exception {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         float amount, balance, charges= (float) 0.50;
         amount=sc.nextFloat();
