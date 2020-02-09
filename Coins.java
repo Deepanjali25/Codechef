@@ -1,19 +1,14 @@
-package codechef;
 import java.util.Scanner;
-class Coins {
-    public static int getChange(int coins) {
-        int n = coins;
-        int change = (n/2) + (n/3) + (n/4);
-        if (change > n) {
-            n = change;
-        }
-        return n;
+public class Coins {
+    public static int changeCoin(int n) {
+        int coin = (n/2) + (n/3) + (n/4);
+        return coin>n?coin:n;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        for (int i=0;i<=9;i++) {
+        while(scanner.hasNext()) {
             int n = scanner.nextInt();
-            System.out.println(getChange((n)));
+            System.out.println(changeCoin(n));
         }
     }
 }
